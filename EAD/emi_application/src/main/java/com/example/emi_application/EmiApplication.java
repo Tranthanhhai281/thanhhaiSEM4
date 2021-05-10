@@ -1,13 +1,13 @@
-package com.example.emi_exam;
+package com.example.emi_application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmiExamApplication {
+public class EmiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmiExamApplication.class, args);
+        SpringApplication.run(EmiApplication.class, args);
     }
 
 }

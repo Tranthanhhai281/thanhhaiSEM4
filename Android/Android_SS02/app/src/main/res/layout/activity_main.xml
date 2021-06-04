@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUserName"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:layout_margin="10dp"
+            android:text="Byrdie"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTime"
+            android:layout_below="@+id/tvUserName"
+            android:text="10 phut truoc"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:text="Hom nay troi dep qua."
+            android:layout_below="@+id/tvTime"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imgBody"
+            android:src="@drawable/rain"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvContent"
+            android:text="Dang di thi troi do mua"
+            android:layout_below="@+id/imgBody"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUrl"
+            android:layout_below="@+id/tvContent"
+            android:text="dantri.com.vn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Like"
+                android:textColor="@color/black"
+                android:background="#00000000"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="comment"
+                android:textColor="@color/black"
+                android:background="#00000000"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Share"
+                android:textColor="@color/black"
+                android:background="#00000000"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

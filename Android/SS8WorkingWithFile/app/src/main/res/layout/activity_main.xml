@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Text here"
+        android:gravity="top"
+        android:maxLines="5"/>
+    <RadioButton
+        android:id="@+id/radGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        <RadioButton
+            android:id="@+id/radInternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal"
+            />
+        <RadioButton
+        android:id="@+id/radExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External"
+        />
+    
+</LinearLayout>
